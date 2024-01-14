@@ -9,3 +9,5 @@ end, { desc = "Edit snippet" })
 vim.keymap.set({ "n", "x" }, "<leader>sA", function()
   require("scissors").addNewSnippet()
 end, { desc = "Create new snippet" })
+
+vim.keymap.set("n", "<leader>cT", "<cmd>VimtexCompile<cr>", { desc = "Compile tex" })
